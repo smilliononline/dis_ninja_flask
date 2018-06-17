@@ -10,23 +10,23 @@
     <div class=container_ninjaColor>
         <h1>Introducing...The Ninjas</h1>
         <div id="donatello">
-            <img src="static/donatello.jpg" alt="Donatello">
+            <img src="{% url_for('static', filename=image_src) %}" alt="Donatello">
             <h2>Donatello</h2>
         </div>
         <div id='leonardo'>
-            <img src="static/leonardo.jpg" alt="Leonardo">
+            <img src="{% url_for('static', filename=image_src) %}" alt="Leonardo">
             <h2>Leonardo</h2>
         </div>
         <div id="michelangelo">
-            <img src="static/michelangelo.jpg" alt="Michelangelo">
+            <img src="{% url_for('static', filename=image_src) %}" alt="Michelangelo">
             <h2>Michelangelo</h2>
         </div>
         <div id="raphael">
-            <img src="static/raphael.jpg" alt="Raphael">
+            <img src="{% url_for('static', filename=image_src) %}" alt="Raphael">
             <h2>Raphael</h2>
         </div>
         <div id="april">
-            <img src="static/notapril.jpg" alt="Not April">
+            <img src="{% url_for('static', filename=image_src) %}" alt="Not April">
             <h2>Not April</h2>
         </div>
     </div>

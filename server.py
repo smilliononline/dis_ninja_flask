@@ -12,15 +12,15 @@ def ninja():
 @app.route('/ninjacolor/<color>')
 def ninja_color(color):
     if color == 'blue':
-        return render_template("ninjacolor.html/#leonardo")
+        return render_template("ninjacolor.html", image_src='static/leonardo.jpg')
     elif color == 'orange':
-        return render_template("ninjacolor.html/#michelangelo")
+        return render_template("ninjacolor.html", image_src='static/michelangelo.jpg')
     elif color == 'red':
-        return render_template("ninjacolor.html/#raphael")
+        return render_template("ninjacolor.html", image_src='static/raphael.jpg')
     elif color == 'purple':
-        return render_template("ninjacolor.html/#donatello")
+        return render_template("ninjacolor.html", image_src='static/donatello.jpg')
     else:
-        return render_template("ninjacolor.html/#april")
+        return render_template("ninjacolor.html", image_src='static/april.jpg')
 
 
 app.run(debug=True)
